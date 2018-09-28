@@ -1,0 +1,379 @@
+body{
+  font: 15px/1.5 arial, helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: lightgrey;
+}
+
+ul{
+ margin: 0;
+ padding: 0;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header{
+  background: grey;
+  color: white;
+  padding-top: 10px;
+  min-height: 50px;
+  border-bottom: #4169E1 3px solid;
+  width: 100%;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px;
+}
+
+header #branding{
+  float: right;
+}
+
+header #branding img{
+    height: 60px;
+    width: auto;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+  float: left;
+  margin-top: 20px;
+}
+
+header .current a {
+    color: #4169E1;
+}
+
+header a:hover{
+    color: lightgrey;
+}
+
+#showcase img{
+   width: 100%;
+   height: auto;
+}
+
+#home-text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+  padding: 5px;
+  color: white;
+  background: grey;
+  text-align: left;
+  font-size: 12px;
+  line-height: 0.5;
+}
+
+.copyright{
+    line-height: 2;
+    font-size: 14px;
+}
+
+.projects {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.project-title{
+    text-align: center;
+    color: #fff;
+}
+
+.box {
+    display: inline-block;
+    padding-top: 20px;
+    background-color: grey;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+.box img{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box p {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    font-size: 100%;
+}
+
+.project-name:hover{
+    color: lightgrey;
+}
+
+#slider, .wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+.wrap{
+    background: lightgrey;
+}
+
+.wrap img{
+    height: 500px;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-left:hover{
+    border-right-color: grey;
+}
+
+#arrow-right{
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+
+#arrow-right:hover{
+    border-left-color: grey;
+}
+
+#contact-showcase{
+    text-align: center;
+}
+
+#contact-showcase img{
+    width: 60%;
+}
+
+form {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+form label{
+    display: block;
+}
+
+form input{
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.contact-boxes {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.contact-box{
+    display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.service-boxes {
+    text-align: center;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-box {
+    background: grey;
+    border: 2px solid lightgrey;
+    display: table-cell;
+    width: 33%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.service-box img{
+    width: 90%;
+}
+
+.service-box h1, .service-box p {
+    color: #fff;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.works {
+    text-align: center;
+    display: table;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-box2 {
+    display: table-cell;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: left;
+    border: 2px solid lightgrey;
+}
+#table-div{
+    width: 80%
+}
+
+@media(max-width: 880px){
+    .container{
+        width: 100%;
+    }
+
+    header #branding,
+    header nav,
+    header nav li,
+    footer,
+    .copyright,
+    .phone,
+    .email{
+        float: none;
+        text-align: center;
+        width: 100%;
+    } 
+
+    .box{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+    
+    #home-text{
+        text-align: center;
+    }
+
+    .arrow {
+        top: 80%;
+    }
+
+    #arrow-left {
+        border-width: 20px 30px 20px 0;
+        margin-left: 20px;
+    }
+
+    #arrow-right {
+        border-width: 20px 0 20px 30px;
+        margin-right: 20px;
+    }
+
+    .service-box, .service-box2 {
+        display: block;
+        margin: auto;
+        width: 70%;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .works {
+        text-align: center;
+        width: 90%;
+        margin: 5%;
+    }
+ }
+
+@media(max-width: 628px){
+    header #branding,
+    header nav,
+    header nav li,
+    footer{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .wrap,
+    .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .wrap img {
+        width: 80%;
+        height: auto;
+    }
+
+    .phone{
+        padding-top: 10px;
+    }
+
+    #arrow-left {
+        border-width: 10px 20px 10px 0;
+        margin-left: 10px;
+    }
+
+    #arrow-right {
+        border-width: 10px 0 10px 20px;
+        margin-right: 10px;
+    }
+
+    .project-title {
+        font-size: 12px;
+    }
+
+    #contact-showcase img {
+        width: 80%;
+    }
+
+    .contact-box {
+        width: 100%;    
+        text-align: center;
+        display: block;
+    }
+
+    .service-box {
+        width: 90%;
+    }
+}

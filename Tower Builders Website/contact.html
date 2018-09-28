@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Tower Builders construction website">
+    <meta name="keywords" content="construction, project, business">
+    <meta name="author" content="Diego Coviella">
+    <title>Tower Builders | Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="img/logo.png"/>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home<a></li>
+                    <li><a href="projects.html">Projects<a></li>
+                    <li><a href="services.html">Services<a></li>
+                    <li class="current"><a href="contact.html">Contact Us<a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	<section>
+		<div id="contact-showcase" class="container">
+			<br>
+			<img src="img/contact_img.png"/>
+		</div>
+	</section>
+	<section class="contact-boxes">
+		<div class="contact-box">
+			<p>Tower Builders, Inc.</p>
+			<p>8931 SW 5 ST.</p>
+			<p>Miami, FL 33174</p>
+		</div>
+		<div class="contact-box">
+			<p>Office: 786-290-6723</p>
+			<p>Cellular: 786-290-6724</p>
+			<p>FAX: 305-552-8689</p>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<form method="post" action="php/contact-form.php">
+			<hr>
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" name="name" class="form-control" value="" required>
+				</div>
+				<br>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="text" name="email" class="form-control" value="" required>
+				</div>
+				<br>
+				<div class="form-group">
+					<label>Message</label>
+					<textarea type="text" name="message" class="form-control" required></textarea>
+				</div>
+				<br>
+				<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+				<br>
+				<br>
+			</form>
+		</div>
+	</section>
+    <footer id="main-footer">
+        <p class="phone">786-290-6723</p>
+        <p class="email">sg@towerbuilders.net</p>
+        <p class="copyright">Copyright &copy; 1996, Tower Builders, Inc.</p>
+    </footer>
+</body>
+</html>
